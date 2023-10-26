@@ -2,7 +2,7 @@ https://sousasz.github.io/website-pages-3/
 
 # Desenvolvido por Vinicius Morais 1º DS
 
-## Propósito do desenvolvimento
+## Propósito do desenvolvimento 
 
 O objetivo do desenvolvimento desse site é simular uma plataforma de cursos que disponibilizasse a aprendizagem de linguagens da área de informática , como o HTML, CSS, javaScript e Python. Meu interesse em trabalhar com essa temática faz relação com alguns ambientes de aprendizado onde eu já tive contato e a oportunidade de utilizar outras linguagens que para mim eram desconhecidas, em exceção o HTML e CSS. 
 
