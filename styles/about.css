@@ -1,0 +1,228 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body#bottom-bg {
+    background-color: #212121;
+    position: absolute;
+    background-size: cover; 
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 130vh;
+}
+
+/*Estilo para NavBar*/
+
+nav .nav-content  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar-links {
+    margin-left: 10%;    
+    font-family: 'Inter', sans-serif;
+    display: flex;
+}
+
+
+/*Estilos para links de páginas*/
+
+a.nav-link-home, .nav-link-about, .nav-link-contact {
+   margin-left: 20px;
+}
+
+a.nav-link-home:hover, .nav-link-about:hover, .nav-link-contact:hover {
+    text-decoration: none;
+    
+}
+
+/*Estilo para conteúdo (formulário de sobre)*/
+
+.bg-color-form {
+    background-color: #d2d2d2;
+}
+
+section.about {
+    display: flex;
+    justify-content: center;
+}
+
+.about h5 {
+    font-family: 'Inter', sans-serif;
+    max-width: 50%;
+}
+
+.about-form {
+    width: 780px;
+    height: 700px;
+    border-radius: 2px;
+}
+
+.about-form p {
+    max-width: 60%;
+    padding: 15px;
+}
+
+
+.introducing {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+
+.bottom-image {
+    background-color: #212121;
+    width: 140px;
+    height: 140px;
+    border-radius: 100%;
+}
+
+
+/* Estilo para footer e conteúdo interno*/
+
+footer {
+    font-family: 'Inter', sans-serif;
+    background-color: #273437;  
+    text-align: center;
+    color: whitesmoke;
+    position: fixed;
+    padding: 1pc;
+    height: 9%;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+}
+
+/*Componentes do footer*/
+
+.footer-components {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+footer i {
+    color: #7b90bd;
+}
+
+footer .dropdown button {
+    background-color: #273437;
+    margin-left: 20%;
+    margin-top: -3.9%;
+}
+
+
+
+/*Responsividade*/
+
+@media only screen and (max-width: 993px) {
+    .navbar-links{
+        display: none;
+    }
+
+    nav .nav-content  {
+        display: flex;
+        justify-content: center;
+    }
+
+}  
+
+@media only screen and (max-width: 795px) {
+
+    .about-form {
+        width: 620px;
+        height: 750px;
+        border-radius: 2px;
+    }
+
+}
+
+@media only screen and (max-width: 630px) {
+
+    .about-form {
+        width: 520px;
+        height: 855px;
+        border-radius: 2px;
+    }
+    
+}
+
+@media only screen and (max-width: 530px) {
+    .about-form {
+        width: 400px;
+        height: 1030px;
+        border-radius: 2px;
+    }
+
+    .about-form p {
+        max-width: 95%;
+        padding: 15px;
+    }
+}
+
+@media only screen and (max-width: 410px) {
+    .about-form {
+        width: 350px;
+        height: 1030px;
+        border-radius: 2px;
+    }
+
+    .about-form p {
+        max-width: 95%;
+        padding: 15px;
+    }
+}
+
+/*--------------------------------------------*/
+
+
+@media only screen and (max-width: 695px) {
+
+    .components-1, .components-2 {
+        flex-direction: column;
+    }
+
+}   
+
+
+
+@media only screen and (max-width: 376px) {
+ 
+
+    p.subtitle-code {
+        font-size: small;
+    }
+
+    .footer-components {
+        margin-right: 32vh;
+    }
+    
+    footer p {
+        display: none;
+    }
+
+}   
+
+@media only screen and (max-width: 415px) {
+    h1.initial-title {
+        font-family: Consolas, 'Courier New', monospace;
+        color: white;
+        text-align: center;
+        font-size: 25px;
+    }
+
+    .subtitle-code {
+        font-size: small;
+    }
+
+    .grid {
+        display: flex;
+        margin-top: 20rem;
+    }
+}

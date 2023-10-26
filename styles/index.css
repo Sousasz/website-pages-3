@@ -1,0 +1,246 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body#bottom-bg {
+    background-color: #212121;
+}
+
+/*Estilo para NavBar*/
+
+nav .nav-content  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar-links {
+    margin-left: 10%;    
+    font-family: 'Inter', sans-serif;
+    display: flex;
+}
+
+
+/*Estilos para links de páginas*/
+
+a.nav-link-home, .nav-link-about, .nav-link-contact {
+   margin-left: 20px;
+}
+
+a.nav-link-home:hover, .nav-link-about:hover, .nav-link-contact:hover {
+    text-decoration: none;
+    
+}
+
+/*Estilo para conteúdo da página*/
+
+h1.initial-title {
+    font-family: Consolas, 'Courier New', monospace;
+    color: white;
+    text-align: center;
+}
+
+p.subtitle-code {
+    font-family: Consolas, 'Courier New', monospace;    
+    color: white;
+    text-align: center;
+}
+
+i#string {
+    color: #D9E499;
+}
+
+i#var-declaration {
+    color: #E68CBF;
+}
+
+i#equal {
+    color: #E68CBF;
+}
+
+i {
+    color: rgb(210, 210, 19);
+}
+
+h3.title-for-courses {
+    color: whitesmoke;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+}
+
+/*Estilização para grade de produtos*/
+
+.grid {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+}
+
+.grid div.card-1, .card-2, .card-3, .card-4 {
+    background-image: linear-gradient(180deg, rgb(15, 13, 13), #032a31);
+    border: solid 2px #02171a;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 15px;
+} 
+
+.components {
+    display: flex;
+}
+
+.components-1, .components-2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.grid div.card-body {
+    color: rgb(217, 217, 217);
+}
+
+.grid h5 {
+    font-family: Consolas, 'Courier New', monospace;
+    color: white;
+    text-align: center;
+}
+
+.access-btn {
+    font-family: 'Poppins', sans-serif;
+    background-color: #0d3889;
+    border-style: none;
+    width: 6pc;
+    height: 2.3pc;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.access-btn:hover {
+    background-color: #061f4c;
+}
+
+.access-btn a {
+    color: whitesmoke;
+}
+
+.access-btn a:hover {
+    color: rgb(222, 227, 232);
+    text-decoration: none;
+}
+
+
+/* Estilo para footer e conteúdo interno*/
+
+footer {
+    font-family: 'Inter', sans-serif;
+    background-color: #273437;  
+    text-align: center;
+    color: whitesmoke;
+    position: fixed;
+    padding: 1pc;
+    height: 9%;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+}
+
+/*Componentes do footer*/
+
+.footer-components {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+footer i {
+    color: #7b90bd;
+}
+
+footer .dropdown button {
+    background-color: #273437;
+    margin-left: 20%;
+    margin-top: -3.9%;
+}
+
+/*Responsividade
+
+1- NavBar e grid*/
+
+@media only screen and (max-width: 1470px) {
+    .components {
+        display: inline-block;
+    }
+}
+
+@media only screen and (max-width: 993px) {
+    .navbar-links{
+        display: none;
+    }
+
+    nav .nav-content  {
+        display: flex;
+        justify-content: center;
+    }
+
+}  
+
+/*-------------------------------------------*/
+
+@media only screen and (max-width: 1500px) {
+    main {
+        height: 240vh;
+    }
+}
+
+@media only screen and (max-width: 695px) {
+    .components-1, .components-2 {
+        flex-direction: column;
+    }
+
+
+}   
+
+
+
+@media only screen and (max-width: 376px) {
+ 
+
+    p.subtitle-code {
+        font-size: small;
+    }
+
+    .footer-components {
+        margin-right: 32vh;
+    }
+    
+    footer p {
+        display: none;
+    }
+
+}   
+
+@media only screen and (max-width: 415px) {
+    h1.initial-title {
+        font-family: Consolas, 'Courier New', monospace;
+        color: white;
+        text-align: center;
+        font-size: 25px;
+    }
+
+    .subtitle-code {
+        font-size: small;
+    }
+
+    .grid {
+        display: flex;
+        margin-top: 20rem;
+    }
+}
+
+
+
